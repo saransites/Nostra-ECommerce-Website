@@ -26,9 +26,9 @@ for(let i=0;i<blk.length;i++){
 //add event listener for each heart
     blackheart.addEventListener("click", function(){ 
        if(blackheart.src=="http://127.0.0.1:5500/img/icons/blackheart.png"){
-        this.src="http://127.0.0.1:5500/img/icons/redheart.png"
+        this.src="./img/icons/redheart.png"
        }else{
-        this.src="http://127.0.0.1:5500/img/icons/blackheart.png"
+        this.src="./img/icons/blackheart.png"
        }
     });
 }
