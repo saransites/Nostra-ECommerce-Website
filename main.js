@@ -19,19 +19,17 @@ erase.addEventListener("click",()=>{
     sidenav.style.right="-40rem"
 })
 // like button section
-const blk=document.querySelectorAll(".blackheart img")
+const blk=document.querySelectorAll(".blackheart")
 
-for(let i=0;i<blk.length;i++){
-    let blackheart = blk[i];
-//add event listener for each heart
-    blackheart.addEventListener("click", function(){ 
-       if(blackheart.src=="./img/icons/blackheart.png"){
-        this.src="./img/icons/redheart.png"
+blk.forEach(btn => {
+    btn.addEventListener("click",(e)=>{
+       if(e.target.src.indexOf("blackheart")>0){
+        e.target.src="img/icons/redheart.png"
        }else{
-        this.src="./img/icons/blackheart.png"
+        e.target.src="img/icons/blackheart.png"
        }
-    });
-}
+    })
+})
 
 // sliding images
 
