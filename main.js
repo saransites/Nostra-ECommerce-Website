@@ -25,7 +25,7 @@ for(let i=0;i<blk.length;i++){
     let blackheart = blk[i];
 //add event listener for each heart
     blackheart.addEventListener("click", function(){ 
-       if(blackheart.src=="http://127.0.0.1:5500/img/icons/blackheart.png"){
+       if(blackheart.src=="./img/icons/blackheart.png"){
         this.src="./img/icons/redheart.png"
        }else{
         this.src="./img/icons/blackheart.png"
@@ -47,14 +47,14 @@ right.addEventListener("click",()=>{
     if(index==imgname.length){
         index=0
     }
-    container.style.background=`url('./img/others/${imgname[index]}.jpg')center/cover`
+    container.style.background=`url('./img/others/${imgname[index]}.jpg')center/contain no-repeat`
 })
 left.addEventListener("click",()=>{
     index--
     if(index<0) {
         index=imgname.length-1
     }
-    container.style.background=`url('./img/others/${imgname[index]}.jpg')center/cover`
+    container.style.background=`url('./img/others/${imgname[index]}.jpg')center/contain no-repeat`
 })
 
 // scrol animation

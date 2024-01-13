@@ -10,22 +10,27 @@ input,textarea:is(:focus){
 }
 .img-slider{
     width:100vw;
-    height:auto;
 }
 .imgcontainer{
     background:url('./img/others/slider-one.jpg');
     background-position:center;
     background-size: contain;
-    width:100%;
-    height:65vh;
+    width:160%;
     transition:1s;
     background-repeat: no-repeat;
 }
-@media screen and (max-width:640px) {
+@media screen and (max-width:639px) {
     .imgcontainer{
         background-position: center;
         background-size: contain;
-        height:35vh;
+        height:15vh;
+    }
+}
+@media screen and (min-width:640px) {
+    .imgcontainer{
+        background-position: center;
+        background-size: contain;
+        height:65vh;
     }
 }
 .animate-scroll{
