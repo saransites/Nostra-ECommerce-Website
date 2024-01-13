@@ -18,18 +18,35 @@
         </div>
     </div>
     <!-- header section -->
-        <nav class="sticky top-0  w-full bg-gray-50 flex items-center justify-between px-6 lg:px-10 md:px-8">
+        <nav class="sticky top-0 shadow-xl  w-full bg-gray-50 flex items-center justify-between px-6 lg:px-10 md:px-8">
             <div class="p-2">
                 <p class="text-2xl font-bold">Nostra</p>
             </div>
-            <div id="hamburger" class="cursor-pointer">
+            <div id="hamburger" class="md:hidden cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                   </svg>
             </div>
+            <ul class="md:flex hidden">
+                <li class="p-2 text-center hover:bg-pink-900 hover:text-white transition-all rounded">
+                    <a href="#">Home</a>
+                </li>
+                <li class="p-2 text-center hover:bg-pink-900 hover:text-white transition-all rounded">
+                    <a href="#New--Arrival">New Arrival</a>
+                </li>
+                <li class="p-2 text-center hover:bg-pink-900 hover:text-white transition-all rounded">
+                    <a href="#Most--Wanted">Most wanted</a>
+                </li>
+                <li class="p-2 text-center hover:bg-pink-900 hover:text-white transition-all rounded">
+                    <a href="collections.html" target="_blank">Collections</a>
+                </li>
+                <li class="p-2 text-center hover:bg-pink-900 hover:text-white transition-all rounded">
+                    <a href="contacts.html" target="_blank">Contact us</a>
+                </li>
+            </ul>
         </nav>
         <!-- sidenav -->
-        <ul id="sidenav" class=" h-full md:w-1/4 bg-red-200 pt-28 fixed top-0 -right-96 transition-all duration-6000 ease ">
+        <ul id="sidenav" class=" h-full w-1/2 md:w-1/4 bg-gray-200 pt-28 shadow-2xl fixed top-0 -right-96 transition-all duration-6000 ease ">
             <div id="fa-xmark" class="absolute top-2 right-2 md:text-2xl cursor-pointer">
                 <i class="fa-solid fa-xmark"></i>
             </div>
@@ -147,12 +164,12 @@
         </div>
     </section>
     <!-- New Arrivals -->
-    <section class="animate-scroll reveal-scroll p-2" id="New--Arrival">
+    <section class="animate-scroll reveal-scroll p-2 " id="New--Arrival">
         <h1 class="font-bold text-3xl lg:text-4xl">New Arrivals</h1>
 
         <div class="flex gap-2 rounded p-3 justify-center w-full">
             <!-- img--box--one -->
-            <div class="arrivalimg1 lg:w-60 md:w-48 w-24 ">
+            <div class="arrivalimg1 md:h-56">
                 <div class="flex justify-center items-center w-full h-full">
                     <div class="flex gap-1 items-center bg-gray-400 px-1 rounded">
                         <a href="#" class="text-black text-xs md:text-lg md:px-2">Shop Now</a>
@@ -163,7 +180,7 @@
                 </div>
             </div>
             <!-- img-box--two -->
-            <div class="arrivalimg2 lg:w-60 md:w-48 w-24 ">
+            <div class="arrivalimg2 md:h-56">
                 <div class="flex justify-center items-center w-full h-full">
                     <div class="flex gap-1 items-center bg-gray-400 px-1 rounded">
                         <a href="#" class="text-black text-xs md:text-lg md:px-2">Shop Now</a>
@@ -174,7 +191,7 @@
                 </div>
             </div>
             <!-- img--box--three -->
-            <div class="arrivalimg3 lg:w-60 md:w-48 w-24 ">
+            <div class="arrivalimg3 md:h-56">
                 <div class="flex justify-center items-center w-full h-full">
                     <div class="flex gap-1 items-center bg-gray-400 px-1 rounded">
                         <a href="#" class="text-black text-xs md:text-lg md:px-2">Shop Now</a>
@@ -185,7 +202,7 @@
                 </div>
             </div>
             <!-- img--box--four -->
-            <div class="arrivalimg4 lg:w-60 md:w-48 w-24 ">
+            <div class="arrivalimg4 md:h-56">
                 <div class="flex justify-center items-center w-full h-full">
                     <div class="flex gap-1 items-center bg-gray-400 px-1 rounded">
                         <a href="#" class="text-black text-xs md:text-lg md:px-2">Shop Now</a>
@@ -198,11 +215,11 @@
         </div>
     </section>
     <!-- Most Wanted -->
-   <section class="p-2" id="Most--Wanted">
+   <section class="animate-scroll reveal-scroll p-2 " id="Most--Wanted">
     <h1 class="font-bold text-3xl lg:text-4xl">Most wanted</h1>
-        <div class="flex max-w-max gap-2 h-36 md:h-52 lg:h-72 overflow-x-scroll ml-3 mt-2">
+        <div class="flex max-w-max gap-2 h-48 md:h-64 lg:h-72 overflow-x-scroll ml-3 mt-2">
             <!-- img--box--one --> 
-            <div class="wantedimg1 lg:w-72 md:w-72">
+            <div class="wantedimg1">
                 <!-- sale image -->
                 <p class="bg-red-700 rounded w-1/2 text-white text-center md:text-lg lg:text-xl">sale</p>
 
@@ -225,7 +242,7 @@
                 </div>
             </div>
             <!-- img--box--two --> 
-            <div class="wantedimg2 lg:w-72 md:w-72">
+            <div class="wantedimg2">
                 <!-- sale image -->
                 <p class="bg-red-700 rounded w-1/2 text-white text-center md:text-lg lg:text-xl">sale</p>
 
